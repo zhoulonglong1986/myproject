@@ -1,0 +1,311 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bag"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!-- 标题部分 （logo 天气预报） -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:visibility="visible" >
+
+        <!-- logo） -->
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/logo3" />
+        <!-- 天气预报 -->
+
+        <LinearLayout
+            android:id="@+id/ll_tanqin"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="160dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="3dp"
+                android:text="星期二"
+                android:textColor="@color/tanqin"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/iv_tanqin"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/s_1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_wendu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="20dp"
+                android:text="23-26℃"
+                android:textColor="@color/tanqin"
+                android:textSize="40sp"
+                android:visibility="gone" />
+
+ <LinearLayout 
+                android:id="@+id/ll_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                
+                <ImageView 
+                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                
+                android:src="@drawable/wifi"/>
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="网络连接断开!"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
+                
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 横线部分 -->
+
+        <ImageView
+            android:layout_width="1756dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/line" />
+    </RelativeLayout>
+
+    <!-- 标题部分 结束 -->
+
+
+    <!-- 主体部分 开始 -->
+
+    <LinearLayout
+        android:id="@+id/ll_sch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/ll_main_bg"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="630dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="630dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="0" >
+
+
+                        <ImageView
+                            android:id="@+id/iv_bg"
+                            android:layout_width="880dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/bag"
+                            android:visibility="visible" />
+
+                        <RelativeLayout
+                            android:layout_width="880dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/translucence" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tv_name"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="150dp"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="30dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_ban"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="0dp"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="30dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+
+                    <ImageView
+                        android:layout_width="880dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/left"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="450dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="440dp"
+                        android:layout_height="300dp" >
+
+                        <com.linj.camera.view.CameraContainer
+                            android:id="@+id/container"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rig02" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="440dp"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="20dp" >
+
+                        
+
+                        <ImageView
+                            android:id="@+id/iv_camera"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bag" />
+                        
+                        <ImageView
+                            android:id="@+id/iv_sch02"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rig02" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="450dp">
+                
+                  <GridView
+                android:id="@+id/lv_qinsus"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="5dp"
+                android:columnWidth="440dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="3"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:scrollbars="none"
+                android:stretchMode="spacingWidth"
+                android:verticalSpacing="5dp"
+                android:visibility="visible" >
+            </GridView>
+            </RelativeLayout>
+          
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/rigg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sch06_title"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="0"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:paddingLeft="0dp"
+                android:paddingTop="30dp"
+                android:singleLine="true"
+                android:text="关于元旦的放假通知"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_sch06_body"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="20"
+                android:maxEms="600"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="0dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="0" >
+
+                <TextView
+                    android:id="@+id/tv_sch06_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:text="1月  22日"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

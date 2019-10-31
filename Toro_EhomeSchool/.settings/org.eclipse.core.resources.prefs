@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/com/example/toro/json/internal/mapping/ApiField.java=UTF-8
+encoding//src/com/example/toro/json/internal/mapping/ApiListField.java=UTF-8
+encoding//src/com/example/toro/json/internal/mapping/Converter.java=UTF-8
+encoding//src/com/example/toro/json/internal/mapping/Converters.java=UTF-8
+encoding//src/com/example/toro/json/internal/mapping/Reader.java=UTF-8
+encoding//src/com/example/toroapi/AppUtils.java=UTF-8
+encoding//src/com/example/toroapi/Constants.java=UTF-8

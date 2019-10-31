@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:padding="15dp">
+	<TextView android:layout_width="fill_parent"
+		android:textColor="@color/white" android:textSize="18dip"
+		android:layout_height="wrap_content" android:id="@+id/msg"></TextView>
+	<RelativeLayout android:layout_width="fill_parent" android:layout_marginTop="15dp"
+		android:layout_height="wrap_content">
+		<ProgressBar android:layout_width="fill_parent"
+			style="@style/progressBarInsatllApp" android:layout_height="wrap_content"
+			android:max="100" android:progress="0" android:id="@+id/download_progress"></ProgressBar>
+		<TextView android:layout_width="fill_parent" android:id="@+id/textShow_Progress"
+			android:text="0%" android:layout_height="wrap_content"
+			android:textSize="15dip" android:textColor="@color/red"
+			android:gravity="center"></TextView>
+	</RelativeLayout>
+</LinearLayout>

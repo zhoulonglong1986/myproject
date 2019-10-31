@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".LoadingActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/icon" />
+    
+        <TextView
+        android:id="@+id/tv_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="正在同步数据，这过程可能要花几分钟.."
+        android:textSize="18sp"
+        android:textColor="@color/orange"
+        android:layout_marginLeft="990dp"
+        android:layout_marginTop="560dp" />
+        
+
+
+        <ProgressBar
+        android:id="@+id/pb_load"
+        style="@style/progressBarHorizontal_indeter"
+        android:layout_width="500dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="590dp"
+        android:layout_marginTop="609dp" />
+        
+        
+
+        
+        
+
+         
+       
+
+</RelativeLayout>

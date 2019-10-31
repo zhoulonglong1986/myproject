@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center">
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="设置考勤机ID"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        
+      
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray_light"/>
+        
+         <TextView 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             android:layout_marginLeft="30dp"
+             android:textColor="@color/red"
+             android:textSize="25sp"
+             android:text="提示:请先在服务端的考勤机管理里添加考勤机，添加成功后将考勤机的ID填在以下输入框内，切记要输入正确！，否则会造成考勤机无法识别以及下载数据失败！！"/>
+            <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="720dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="考勤机ID："/>
+            
+            <EditText 
+                android:id="@+id/et_tem"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:numeric="integer"
+                android:layout_marginLeft="10dp"/>
+                
+        </LinearLayout>
+        
+
+
+    </LinearLayout>
+    
+         <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="770dp">
+
+           <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="返回"
+            android:textSize="28sp"
+            android:layout_centerInParent="true" />
+           
+           <Button
+            android:id="@+id/bt_con"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="保存"
+            android:textSize="28sp"
+            android:layout_centerInParent="true" />
+            
+        </LinearLayout>
+
+</LinearLayout>

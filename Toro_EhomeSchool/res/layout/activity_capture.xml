@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/bg_gray">
+	<FrameLayout android:layout_width="fill_parent" android:id="@+id/scanView"
+		android:layout_height="fill_parent">
+		<SurfaceView android:id="@+id/preview_view"
+			android:layout_width="fill_parent" android:layout_gravity="center"
+			android:layout_height="fill_parent" android:layout_centerInParent="true"
+			android:keepScreenOn="true" />
+		<com.example.toroapi.ViewfinderView
+			android:id="@+id/viewfinder_view" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:background="@color/retransparent" />
+	</FrameLayout>
+  <RelativeLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="910dp">
+      
+      <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:text="“请将说明书中的二维码 置于扫描框内”"
+          android:textSize="35sp"
+          android:textColor="@color/green"/>
+  </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center">
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/gray"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        
+      
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray_light"/>
+        
+         <TextView 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             android:layout_marginLeft="30dp"
+             android:textColor="@color/red"
+             android:textSize="25sp"
+             android:text="提示:自动开关机时间 请按正确格式设置  。例如 0910  09指小时,10指分钟  前两位代表小时，后两位代表分钟，设置成功后机器将重启。"/>
+            <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="720dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="开机时间："/>
+            
+            <EditText 
+                android:id="@+id/et_startime"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:hint="小时分钟"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:numeric="integer"
+                android:layout_marginLeft="10dp"/>
+                
+        </LinearLayout>
+        
+            
+               <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="720dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="关机时间："/>
+            
+            <EditText 
+                android:id="@+id/et_endtime"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:hint="小时分钟"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:numeric="integer"
+                android:layout_marginLeft="10dp"/>
+                
+        </LinearLayout>
+        
+           <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="720dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="跳转间隔："/>
+            
+            <EditText 
+                android:id="@+id/et_inter"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:hint="分钟"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:numeric="integer"
+                android:layout_marginLeft="10dp"/>
+
+                
+        </LinearLayout>
+        
+         <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="820dp"
+                android:textColor="@color/gray_light"
+                android:text="停止刷卡时，刷卡界面 跳转到公告界面 的时间间隔 默认为 2分钟 "/>
+        
+
+
+    </LinearLayout>
+    
+         <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="850dp">
+
+          
+           
+           <Button
+            android:id="@+id/bt_save"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="保存"
+            android:textSize="28sp"
+            android:layout_centerInParent="true" />
+            
+        </LinearLayout>
+
+</LinearLayout>
